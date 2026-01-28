@@ -1,13 +1,14 @@
 CommitSense is a unified developer toolkit designed to streamline development lifecycle. From debugging cryptic errors to prioritising messy issues and writing sensible commit messages, by using open source logic and datasets CommitSense brings "sense" to your workflow.
 
-                                        The Vision
+##                                       The Vision
+
 Contributions to open-source projects frequently involve a lot of conflict. CommitSense follows your code through three crucial phases as an intelligent companion:
         
 1) SenseFix (The Detective): When a developer hits an error, SenseFix uses context from the current repository to analyse local stack traces and recommend fixes.
 2) SenseCommit (The Translator): Analyses your git diff and the purpose of your fix to provide relevant, Commit messages.
 3) SenseTriage (The Concierge): Incoming PRs are automatically labelled, prioritised, and assigned to the appropriate maintainers.
 
-                                        Key Features
+##                                        Key Features
 __SenseFix__
 
 How it works: It parses the stack trace, identifies the exact file and line and uses AST(Abstract Syntac Tree) or Static code Analysis to extract the full function and its dependencies.\
@@ -21,7 +22,7 @@ __SenseTriage__
 
 HOw it works: It uses pattern matching and metadata analysis to label PRs and find the right reviewr based on the project's file history.
 
-                                    The Lightweight Stack
+##                                    The Lightweight Stack
 
 Inference: Ollama for logical and local reasonig
 Structural Search: ast-grep for ultra fast code navigation
@@ -30,9 +31,8 @@ CLI Engine: For a beautiful terminal UI
 
 
 
-                                    Quick Start
+##                                    Quick Start
 
-Installation
 # Clone and Install
     git clone https://github.com/your-team/commitsense.git
     cd commitsense
