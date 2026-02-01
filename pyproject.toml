@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "commitsense"
+version = "0.1.0"
+description = "Structural Intelligence for Open Source Contributors"
+readme = "README.md"
+authors = [{ name = "Your Team Name", email = "team@example.com" }]
+requires-python = ">=3.10"
+
+# Essential dependencies for your No-RAG architecture
+dependencies = [
+    "typer[all]>=0.12.0",  # The CLI framework
+    "rich>=13.0.0",        # For beautiful, colorful terminal logs
+    "requests>=2.31.0",    # To send data to the local Ollama API
+    "gitpython>=3.1.0",    # To read git diffs and logs
+    "shellingham>=1.5.0",  # Required by Typer for shell completion
+]
+
+[project.scripts]
+# This maps the command 'cs' to the 'app' variable in src/commitsense/main.py
+cs = "commitsense.main:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+include-package-data = true
