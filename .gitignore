@@ -1,4 +1,3 @@
-# --- Python Specific ---
 __pycache__/
 *.py[cod]
 *$py.class
@@ -20,7 +19,6 @@ wheels/
 .installed.cfg
 *.egg
 
-# --- Virtual Environments ---
 .env
 .venv
 env/
@@ -29,19 +27,17 @@ ENV/
 env.bak/
 venv.bak/
 
-# --- CommitSense Specific ---
 # Ignore local AI model cache or logs
 .cs_cache/
 *.log
 analysis_results.json
 
-# --- Environment Variables / Secrets ---
-# Crucial: Never push your local environment settings
+
 .env
 .flaskenv
 secrets.json
 
-# --- OS & IDE Specific ---
+
 .DS_Store
 Thumbs.db
 .vscode/
@@ -49,7 +45,7 @@ Thumbs.db
 *.swp
 *.swo
 
-# --- Testing ---
+
 .pytest_cache/
 .coverage
 htmlcov/
