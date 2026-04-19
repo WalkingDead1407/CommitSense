@@ -26,5 +26,21 @@ cs = "commitsense.main:app"
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+    "pytest-cov>=7.1.0",
+]
+
 [tool.setuptools]
 include-package-data = true
+
+[tool.pytest.ini_options]
+addopts = "--cov=src --cov-report=term-missing"
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+
+[tool.coverage.report]
+fail_under = 0
