@@ -1,6 +1,0 @@
-[pytest]
-testpaths = tests
-addopts = --cov=src --cov-report=term-missing
-markers =
-    unit: unit tests
-    integration: integration tests
