@@ -1,0 +1,7 @@
+"""CommitSense version information."""
+
+__version__ = "0.1.0"
+__author__ = "WalkingDead1407"
+__description__ = "AI-powered developer companion for debugging, commits, and PR triage"
+
+VERSION_STRING = f"CommitSense {__version__}"
