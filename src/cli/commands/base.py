@@ -13,7 +13,7 @@ class BaseCommand(ABC):      #all cli commands inherit this base class
 
     @classmethod
     def add_args(cls, parser: ArgumentParser) -> None:     # add command-specific arguments to the parser
-        pass 
+        pass
     @abstractmethod
     def execute(self, args: Namespace) -> int:
         """args:Parsed arguments from argparse
